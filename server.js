@@ -2,11 +2,15 @@
 
 const express = require('express');
 const app = express();
+const connectDB = require('./config/db');
+
 const PORT = process.env.PORT || 5000;
+
+connectDB();
 
 app.get('/', function (res, req) {
 	req.send('Hello World');
 });
 
 app.listen(PORT, () => console.log('Listening at ' + PORT));
-//new commit
+
