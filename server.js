@@ -20,5 +20,4 @@ app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/posts', require('./routes/api/posts'));
 app.use('/api/profile', require('./routes/api/profile'));
 
-
 app.listen(PORT, () => console.log('Listening at ' + PORT));
