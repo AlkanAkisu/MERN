@@ -142,9 +142,9 @@ router.delete('/', auth, async (req, res) => {
 	}
 });
 
-// @route    GET api/profile/user/:user_id
-// @desc     Get profile by user ID
-// @access   Public
+// @route    Delete api/profile
+// @desc     Delete profile
+// @access   Private
 router.delete('/', auth, async (req, res) => {
 	try {
 		//TODO remove users post
