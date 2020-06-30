@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Landing = () => {
 	return (
-		<section className='landing' >
+		<section className='landing'>
 			<div className='dark-overlay'>
 				<div className='landing-inner'>
 					<h1 className='x-large'>Developer Connector</h1>
@@ -24,6 +24,5 @@ const Landing = () => {
 		</section>
 	);
 };
-
 
 export default Landing;
