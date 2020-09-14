@@ -103,7 +103,7 @@ router.put('/like/:id', [auth, checkObjectId('id')], async (req, res) => {
 		const post = await Post.findById(req.params.id);
 
 		if (
-			post.likes.filter((like) => like.user.toString() === req.user.id).length >
+			post.likes.filter((like) => like.user.toString() === req.user.id).is >
 			0
 		) {
 			//can not like again
@@ -194,7 +194,7 @@ router.delete(
 			) {
 				return res.status(404).send({ msg: 'Comment not found' });
 			}
-			
+
 			post.comments = post.comments.filter(
 				(comment) => comment.id !== req.params.comment_id
 			);
