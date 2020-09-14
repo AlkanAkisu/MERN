@@ -1,7 +1,0 @@
-{
-	"mongoURI": "mongodb+srv://alkanAkisu:alkan123@mern-uyi63.mongodb.net/test?retryWrites=true&w=majority",
-	"jwtSecret": "MySecretToken",
-	"githubClientId": "f884223cf96d1f434999",
-	"githubSecret": "1386c856c62bea2c835da283dda52bedffa9c16d",
-	"githubToken": "53e0bcc4d95dd895c73109f2404bbbffda792515"
-}
